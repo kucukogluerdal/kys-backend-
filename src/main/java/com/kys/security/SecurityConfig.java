@@ -29,7 +29,7 @@ public class SecurityConfig {
 
     private final JwtFilter jwtFilter;
 
-    @Value("${cors.allowed.origins:http://localhost:5173}")
+    @Value("${CORS_ALLOWED_ORIGINS:http://localhost:5173,https://kys-frontend-sigma.vercel.app,https://kysplatform.com,https://www.kysplatform.com}")
     private String corsAllowedOrigins;
 
     @Bean
